@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Bella's Gift Boutique - Schedule appointments, ask questions, or get in touch about our gift services.">
+    <meta name="keywords" content="contact bella's gift boutique, schedule appointment, gift consultation, customer service">
+    <title>Contact Us - Bella's Gift Boutique | Get in Touch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" role="banner">
+        <nav class="nav container" role="navigation">
+            <a href="index.html" class="logo">Bella's Gift Boutique</a>
+            
+            <ul class="nav-list" role="menubar">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                <li><a href="location.html" class="nav-link">Visit Us</a></li>
+            </ul>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <div class="mobile-menu">
+                <ul class="mobile-nav-list">
+                    <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+                    <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+                    <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
+                    <li><a href="contact.html" class="mobile-nav-link active">Contact</a></li>
+                    <li><a href="location.html" class="mobile-nav-link">Visit Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Contact Us</h1>
+                <p class="hero-subtitle">We're here to help you create the perfect gift experience</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main" role="main">
+        <div class="container">
+            <section>
+                <h2>Get in Touch</h2>
+                <p>Whether you're planning a special occasion, need gift recommendations, or want to schedule a personal shopping appointment, we're here to help make your gift-giving experience extraordinary.</p>
+            </section>
+
+            <!-- Contact Form and Info Grid -->
+            <div class="card-grid" style="margin-top: 3rem; grid-template-columns: 2fr 1fr;">
+                
+                <!-- Contact Form -->
+                <section>
+                    <div class="card">
+                        <h2>Send Us a Message</h2>
+                        <p>Fill out the form below and we'll get back to you within 24 hours. For immediate assistance, please call us at <a href="tel:+15551234567">(555) 123-4567</a>.</p>
+                        
+                        <form id="contact-form" class="contact-form" novalidate style="margin-top: 2rem;">
+                            <!-- Name Field -->
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name <span style="color: #EF4444;">*</span></label>
+                                <input type="text" id="name" name="name" class="form-input" required>
+                            </div>
+                            
+                            <!-- Email Field -->
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address <span style="color: #EF4444;">*</span></label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+                            
+                            <!-- Phone Field -->
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-input">
+                            </div>
+                            
+                            <!-- Subject Field -->
+                            <div class="form-group">
