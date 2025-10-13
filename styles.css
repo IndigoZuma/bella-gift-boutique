@@ -271,13 +271,14 @@ a:focus {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, var(--accent-teal) 0%, var(--accent-gold) 100%);
+    background: linear-gradient(90deg, #002349 0%, #957C3D 100%);
     color: white;
     padding: var(--spacing-2xl) 0;
     text-align: center;
     position: relative;
     overflow: hidden;
 }
+
 
 .hero::before {
     content: '';
