@@ -7,53 +7,192 @@
     <meta name="keywords" content="luxury gifts, gift boutique, professional gift wrapping, personal shopping, downtown boutique, unique gifts, gift registry">
     <meta name="author" content="Bella's Gift Boutique">
     <meta name="robots" content="index, follow">
-    
-    <!-- Security Headers -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' fonts.googleapis.com; font-src fonts.gstatic.com;">
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="DENY">
-   
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Bella's Gift Boutique - Luxury Gifts & Personal Service">
-    <meta property="og:description" content="Discover unique luxury gifts at our elegant downtown boutique. Professional gift wrapping and personalized service.">
-    <meta property="og:image" content="logo-desktop.jpg">
-    <meta property="og:url" content="https://indigozuma.github.io/bella-gift-boutique/">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://indigozuma.github.io/bella-gift-boutique/">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/jpeg" href="favicon-navy.jpg">
-    <link rel="apple-touch-icon" href="favicon-navy.jpg">
-
     <title>Home - Bella's Gift Boutique | Luxury Gifts & Personal Service</title>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
-    <!-- Preload Critical Resources -->
-    <link rel="preload" href="styles.css" as="style">
-    <link rel="preload" href="logo-desktop.jpg" as="image">
-   
-    <!-- Structured Data for SEO -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Bella's Gift Boutique",
-        "description": "Luxury gift boutique offering curated gifts, professional wrapping, and personalized shopping services",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "123 Main Street",
-            "addressLocality": "Downtown District",
-            "addressRegion": "State",
-            "postalCode": "12345",
-            "addressCountry": "US"
-        },
-        "telephone": "(555) 123-4567",
-        "email": "hello@bellasgiftboutique.com",
-        "url": "https://indigozuma.github.io/bella-gift-boutique/",
-        "open
+    <!-- CSS and logo (adjusted for images folder) -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/jpeg" href="images/favicon-navy.jpg">
+    <link rel="apple-touch-icon" href="images/favicon-navy.jpg">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" role="banner">
+        <nav class="nav container" role="navigation" aria-label="Main navigation">
+            <a href="index.html" class="logo" aria-label="Bella's Gift Boutique Home">
+                Bella's Gift Boutique
+                <img src="images/logo-desktop.jpg" alt="Bella's Gift Boutique Logo" class="logo-image">
+            </a>
+            <ul class="nav-list" role="menubar">
+                <li role="none"><a href="index.html" class="nav-link active" role="menuitem">Home</a></li>
+                <li role="none"><a href="services.html" class="nav-link" role="menuitem">Services</a></li>
+                <li role="none"><a href="about.html" class="nav-link" role="menuitem">About Us</a></li>
+                <li role="none"><a href="contact.html" class="nav-link" role="menuitem">Contact</a></li>
+                <li role="none"><a href="location.html" class="nav-link" role="menuitem">Visit Us</a></li>
+            </ul>
+            <!-- Mobile Toggle -->
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <!-- Mobile Navigation -->
+            <div class="mobile-menu" role="menu">
+                <ul class="mobile-nav-list">
+                    <li><a href="index.html" class="mobile-nav-link active" role="menuitem">Home</a></li>
+                    <li><a href="services.html" class="mobile-nav-link" role="menuitem">Services</a></li>
+                    <li><a href="about.html" class="mobile-nav-link" role="menuitem">About Us</a></li>
+                    <li><a href="contact.html" class="mobile-nav-link" role="menuitem">Contact</a></li>
+                    <li><a href="location.html" class="mobile-nav-link" role="menuitem">Visit Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" role="banner">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Welcome to Bella's Gift Boutique</h1>
+                <p class="hero-subtitle">Discover unique gifts and experience personalized service that makes every occasion special</p>
+                <a href="services.html" class="cta-button" aria-describedby="services-description">Explore Our Services</a>
+                <span id="services-description" class="sr-only">Learn about our gift registry, professional wrapping, and personal shopping services</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main" id="main-content" role="main">
+        <div class="container">
+            <!-- Featured Services Section -->
+            <section aria-labelledby="featured-services">
+                <h2 id="featured-services">Our Featured Services</h2>
+                <p>At Bella's Gift Boutique, we specialize in making your gift-giving experience extraordinary. From curated unique gifts to personalized services, we're here to help you celebrate life's special moments.</p>
+                <div class="card-grid">
+                    <!-- Gift Registry Card -->
+                    <article class="card">
+                        <div class="card-icon" aria-hidden="true">🎁</div>
+                        <h3>Gift Registry</h3>
+                        <p>Create personalized registries for weddings, baby showers, birthdays, and special occasions. Share your wish list with family and friends.</p>
+                        <ul class="styled-list">
+                            <li>Online registry management</li>
+                            <li>In-store consultation</li>
+                            <li>Wish list sharing</li>
+                            <li>Purchase tracking</li>
+                        </ul>
+                        <a href="services.html#gift-registry" class="cta-button" aria-label="Learn more about gift registry services">Learn More</a>
+                    </article>
+                    <!-- Gift Wrapping Card -->
+                    <article class="card">
+                        <div class="card-icon" aria-hidden="true">🎀</div>
+                        <h3>Professional Gift Wrapping</h3>
+                        <p>Transform your gifts with our exquisite wrapping services. Premium papers, ribbons, and personalized touches for every occasion.</p>
+                        <ul class="styled-list">
+                            <li>Luxury wrapping materials</li>
+                            <li>Custom ribbon selection</li>
+                            <li>Personal message cards</li>
+                            <li>Same-day service available</li>
+                        </ul>
+                        <a href="services.html#gift-wrapping" class="cta-button" aria-label="View gift wrapping options">View Options</a>
+                    </article>
+                    <!-- Personal Shopping Card -->
+                    <article class="card">
+                        <div class="card-icon" aria-hidden="true">🛍️</div>
+                        <h3>Personal Shopping</h3>
+                        <p>Let our expert stylists help you find the perfect gifts. Schedule a private consultation for personalized recommendations.</p>
+                        <ul class="styled-list">
+                            <li>One-on-one consultations</li>
+                            <li>Expert gift recommendations</li>
+                            <li>Budget-friendly options</li>
+                            <li>Follow-up service</li>
+                        </ul>
+                        <a href="contact.html" class="cta-button" aria-label="Book personal shopping appointment">Book Appointment</a>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Image Placeholder Section -->
+            <section aria-labelledby="boutique-showcase" style="margin-top: 3rem;">
+                <h2 id="boutique-showcase">Our Beautiful Boutique</h2>
+                <div class="image-placeholder" role="img" aria-label="Beautiful boutique interior showcasing elegant displays">
+                    📸 Beautiful Boutique Interior Photo (Image will be added here)
+                </div>
+                <p>Step into our carefully curated space where every corner tells a story. Our boutique features handpicked gifts from local artisans and renowned designers, creating an atmosphere of elegance and discovery.</p>
+            </section>
+
+            <!-- Testimonials Section -->
+            <section aria-labelledby="customer-testimonials" style="margin-top: 3rem;">
+                <h2 id="customer-testimonials">What Our Customers Say</h2>
+                <div class="card-grid">
+                    <blockquote class="card">
+                        <p>"Bella's Gift Boutique made my wedding registry experience absolutely magical. The staff's attention to detail and personal touch made all the difference."</p>
+                        <cite>- Sarah M., Happy Customer</cite>
+                    </blockquote>
+                    <blockquote class="card">
+                        <p>"The gift wrapping here is like art! Every package looks like it belongs in a magazine. I wouldn't shop anywhere else for special occasions."</p>
+                        <cite>- James T., Regular Customer</cite>
+                    </blockquote>
+                    <blockquote class="card">
+                        <p>"The personal shopping service saved me so much time and stress. They found the perfect gifts for everyone on my list within my budget."</p>
+                        <cite>- Maria L., Personal Shopping Client</cite>
+                    </blockquote>
+                </div>
+            </section>
+
+            <!-- Call to Action Section -->
+            <section style="margin-top: 3rem; text-align: center; padding: 2rem; background-color: #f8f9fa; border-radius: 1rem;">
+                <h2>Ready to Discover Your Perfect Gift?</h2>
+                <p>Visit us today and experience the personal touch that makes Bella's Gift Boutique special.</p>
+                <div style="margin-top: 1.5rem;">
+                    <a href="location.html" class="cta-button" style="margin-right: 1rem;" aria-label="Get directions to our store">Visit Our Store</a>
+                    <a href="contact.html" class="cta-button" aria-label="Contact us for more information">Get In Touch</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <address style="font-style: normal;">
+                        123 Main Street<br>
+                        Downtown District<br>
+                        City, State 12345
+                    </address>
+                    <p>Phone: <a href="tel:+15551234567" aria-label="Call us at (555) 123-4567">(555) 123-4567</a></p>
+                    <p>Email: <a href="mailto:hello@bellasgiftboutique.com" aria-label="Email us">hello@bellasgiftboutique.com</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="location.html">Store Hours</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://www.giftretailer.com" target="_blank" rel="noopener noreferrer" aria-label="Visit Gift Retailer Magazine (opens in new tab)">Gift Retail Magazine</a></li>
+                        <li><a href="https://www.museumstoreassociation.org" target="_blank" rel="noopener noreferrer" aria-label="Visit Museum Store Association (opens in new tab)">Museum Store Association</a></li>
+                        <li><a href="https://www.retailgiftcard.org" target="_blank" rel="noopener noreferrer" aria-label="Visit Retail Gift Card Association (opens in new tab)">Retail Gift Card Association</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #555;">
+                <p>&copy; 2025 Bella's Gift Boutique. All rights reserved. | 
+                <a href="privacy.html" style="color: #d4af37;">Privacy Policy</a> | 
+                <a href="accessibility.html" style="color: #d4af37;">Accessibility</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
