@@ -1,186 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="Visit Bella's Gift Boutique in downtown - store hours, directions, parking information, and everything you need to plan your visit to our beautiful boutique." />
-<meta name="keywords" content="bella's gift boutique location, store hours, downtown boutique, directions, parking, visit us, boutique address" />
-<meta name="author" content="Bella's Gift Boutique" />
-<meta name="robots" content="index, follow" />
-
-<title>Visit Us - Bella's Gift Boutique | Location, Hours & Directions</title>
-
-<link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Visit Bella's Gift Boutique in downtown - store hours, directions, parking information, and everything you need to plan your visit to our beautiful boutique.">
+    <meta name="keywords" content="bella's gift boutique location, store hours, downtown boutique, directions, parking, visit us, boutique address">
+    <title>Visit Us - Bella's Gift Boutique | Location, Hours & Directions</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/jpeg" href="favicon-navy.jpg">
 </head>
 <body>
-<!-- Header -->
-<header class="header" role="banner">
-    <nav class="nav container" role="navigation">
-        <a href="index.html" class="logo" aria-label="Bella's Gift Boutique Home">
-            Bella's Gift Boutique
-            <img src="bella200logo.svg" alt="Bella's Gift Boutique Logo" style="height: 40px; vertical-align: middle; margin-left: 8px;">
-        </a>
-        <!-- Desktop Navigation -->
-        <ul class="nav-list" role="menubar">
-            <li><a href="index.html" class="nav-link">Home</a></li>
-            <li><a href="services.html" class="nav-link">Services</a></li>
-            <li><a href="about.html" class="nav-link">About Us</a></li>
-            <li><a href="contact.html" class="nav-link">Contact</a></li>
-            <li><a href="location.html" class="nav-link active">Visit Us</a></li>
-        </ul>
-        <!-- Mobile Menu Toggle -->
-        <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-        </button>
-        <!-- Mobile Navigation -->
-        <div class="mobile-menu" role="menu">
-            <ul class="mobile-nav-list">
-                <li><a href="index.html" class="mobile-nav-link">Home</a></li>
-                <li><a href="services.html" class="mobile-nav-link">Services</a></li>
-                <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
-                <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
-                <li><a href="location.html" class="mobile-nav-link active">Visit Us</a></li>
+    <!-- Header -->
+    <header class="header" role="banner">
+        <nav class="nav container" role="navigation">
+            <a href="index.html" class="logo" aria-label="Bella's Gift Boutique Home">
+                Bella's Gift Boutique
+                <img src="logo-desktop.jpg" alt="Bella's Gift Boutique Logo" class="logo-image">
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <ul class="nav-list" role="menubar">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="location.html" class="nav-link active">Visit Us</a></li>
             </ul>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <!-- Mobile Navigation -->
+            <div class="mobile-menu" role="menu">
+                <ul class="mobile-nav-list">
+                    <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+                    <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+                    <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
+                    <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+                    <li><a href="location.html" class="mobile-nav-link active">Visit Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero" role="banner">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Visit Our Beautiful Boutique</h1>
+                <p class="hero-subtitle">Located in the heart of downtown with convenient hours and easy parking</p>
+            </div>
         </div>
-    </nav>
-</header>
-
-<!-- Hero Section -->
-<section class="hero" role="banner">
-    <div class="container">
-        <div class="hero-content">
-            <h1>Visit Our Beautiful Boutique</h1>
-            <p class="hero-subtitle">Located in the heart of downtown with convenient hours and easy parking</p>
+    </section>
+    
+    <!-- Main Content -->
+    <main class="main" id="main-content" role="main">
+        <div class="container">
+            
+            <!-- Quick Visit Info -->
+            <section aria-labelledby="quick-info">
+                <h2 id="quick-info">Plan Your Visit</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-icon" aria-hidden="true">📍</div>
+                        <h3>Find Us</h3>
+                        <address style="font-style: normal;">
+                            <strong>123 Main Street</strong><br>
+                            Downtown District<br>
+                            City, State 12345
+                        </address>
+                        <p><a href="tel:+15551234567">(555) 123-4567</a></p>
+                        <p><a href="mailto:hello@bellasgiftboutique.com">hello@bellasgiftboutique.com</a></p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon" aria-hidden="true">🕒</div>
+                        <h3>Store Hours</h3>
+                        <p><strong>Monday - Friday:</strong> 10:00 AM - 9:00 PM</p>
+                        <p><strong>Saturday:</strong> 9:00 AM - 10:00 PM</p>
+                        <p><strong>Sunday:</strong> 12:00 PM - 7:00 PM</p>
+                        <p style="margin-top: 1rem; font-size: 0.9rem; color: #0a1d40;"><strong>Extended holiday hours available during peak seasons</strong></p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon" aria-hidden="true">🚗</div>
+                        <h3>Parking & Access</h3>
+                        <p>Free street parking available Monday through Saturday. Validation provided for downtown parking garage located at Corner of Main & 1st Street.</p>
+                        <p><strong>Accessibility:</strong> Wheelchair accessible entrance and restroom facilities available.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Detailed Store Hours Table -->
+            <section aria-labelledby="store-hours" style="margin-top: 3rem;">
+                <h2 id="store-hours">Complete Store Hours & Services</h2>
+                <div class="card">
+                    <p>We're open seven days a week to serve you! Our extended evening hours make it convenient to visit after work, and we stay open late on Saturdays for your weekend shopping needs.</p>
+                    
+                    <div class="table-container" style="margin-top: 2rem;">
+                        <table class="data-table">
+                            <caption class="sr-only">Bella's Gift Boutique Operating Hours and Services</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Day</th>
+                                    <th scope="col">Opening Time</th>
+                                    <th scope="col">Closing Time</th>
+                                    <th scope="col">Special Services Available</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Monday</th>
+                                    <td>10:00 AM</td>
+                                    <td>9:00 PM</td>
+                                    <td>Personal shopping appointments available</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Tuesday</th>
+                                    <td>10:00 AM</td>
+                                    <td>9:00 PM</td>
+                                    <td>Registry consultations available</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Wednesday</th>
+                                    <td>10:00 AM</td>
+                                    <td>9:00 PM</td>
+                                    <td>New arrivals typically displayed</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Thursday</th>
+                                    <td>10:00 AM</td>
+                                    <td>9:00 PM</td>
+                                    <td>Gift wrapping workshops (monthly)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Friday</th>
+                                    <td>10:00 AM</td>
+                                    <td>9:00 PM</td>
+                                    <td>Wine and cheese first Fridays (monthly event)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Saturday</th>
+                                    <td>9:00 AM</td>
+                                    <td>10:00 PM</td>
+                                    <td>Extended weekend hours - personal shopping recommended</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Sunday</th>
+                                    <td>12:00 PM</td>
+                                    <td>7:00 PM</td>
+                                    <td>Relaxed atmosphere, perfect for browsing</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <!-- Special Hours Notice -->
+                    <div style="margin-top: 2rem; padding: 1.5rem; background-color: #f8f9fa; border-radius: 0.75rem; border-left: 4px solid #d4af37;">
+                        <h3 style="color: #0a1d40; margin-bottom: 1rem;">🎄 Holiday & Special Hours</h3>
+                        <p><strong>Peak Holiday Seasons (November-December):</strong> We extend our hours to better serve you during the busy gift-giving season. Check our website or call ahead for specific holiday hours.</p>
+                        <p style="margin-top: 0.5rem;"><strong>Closed:</strong> New Year's Day, Easter Sunday, Independence Day, Thanksgiving Day, and Christmas Day.</p>
+                        <p style="margin-top: 0.5rem;"><strong>Early Closure:</strong> Christmas Eve and New Year's Eve - we close at 3:00 PM.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Getting Here Section -->
+            <section aria-labelledby="directions" style="margin-top: 3rem;">
+                <h2 id="directions">Getting Here & Parking</h2>
+                
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>🚗 By Car</h3>
+                        <p>We're conveniently located in the heart of downtown at:</p>
+                        <p><strong>123 Main Street, Downtown District, State 12345</strong></p>
+                        <p>Use any GPS navigation system with our address. We're easily accessible from all major highways and downtown arterials.</p>
+                        
+                        <h4 style="margin-top: 1.5rem;">Parking Options:</h4>
+                        <ul class="styled-list">
+                            <li>Free 2-hour street parking (Mon-Sat)</li>
+                            <li>Validated parking at Downtown Garage (Corner of Main & 1st)</li>
+                            <li>Weekend parking is free at most downtown meters</li>
+                            <li>Accessible parking spaces available on Main Street</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>🚌 Public Transportation</h3>
+                        <p>Multiple public transit options serve our downtown location:</p>
+                        <ul class="styled-list">
+                            <li><strong>Bus Routes:</strong> Lines 12, 15, and 22 stop within 2 blocks</li>
+                            <li><strong>Light Rail:</strong> Downtown Station is 3 blocks east</li>
+                            <li><strong>Bike Sharing:</strong> Station located 1 block south on 2nd Street</li>
+                            <li><strong>Taxi/Rideshare:</strong> Easy pickup and drop-off on Main Street</li>
+                        </ul>
+                        
+                        <p style="margin-top: 1rem; font-size: 0.9rem; color: #6c757d;">Visit our city's transit website for current schedules and route information.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- What to Expect Section -->
+            <section aria-labelledby="what-to-expect" style="margin-top: 3rem;">
+                <h2 id="what-to-expect">What to Expect During Your Visit</h2>
+                <div class="card">
+                    <div class="card-grid">
+                        <div>
+                            <h3>🏪 Store Layout</h3>
+                            <ul class="styled-list">
+                                <li>2,500 sq ft of curated gift displays</li>
+                                <li>Comfortable consultation areas</li>
+                                <li>Gift wrapping station visible to customers</li>
+                                <li>Registry kiosk for easy browsing</li>
+                                <li>Seasonal displays updated monthly</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h3>🤝 Customer Service</h3>
+                            <ul class="styled-list">
+                                <li>Personal greeting within 30 seconds</li>
+                                <li>Expert gift consultations available</li>
+                                <li>No-pressure browsing environment</li>
+                                <li>Complimentary gift consultations</li>
+                                <li>Multilingual staff available</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h3>♿ Accessibility</h3>
+                            <ul class="styled-list">
+                                <li>Wheelchair accessible entrance</li>
+                                <li>Wide aisles throughout store</li>
+                                <li>Accessible restroom facilities</li>
+                                <li>Large print price tags available</li>
+                                <li>Assistance available for all customers</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 2rem; padding: 1rem; background-color: #e8f5e8; border-radius: 0.5rem;">
+                        <p><strong>💡 Pro Tip:</strong> Schedule a personal shopping appointment during weekday mornings (10 AM - 12 PM) for the most personalized attention and access to our full inventory.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Contact Before You Visit -->
+            <section style="margin-top: 3rem; text-align: center; padding: 2rem; background-color: #f8f9fa; border-radius: 1rem;">
+                <h2>Questions Before Your Visit?</h2>
+                <p>We're happy to help you plan your visit. Call ahead to check on specific items, schedule appointments, or get personalized directions.</p>
+                <div style="margin-top: 1.5rem;">
+                    <a href="tel:+15551234567" class="cta-button" style="margin-right: 1rem;">Call (555) 123-4567</a>
+                    <a href="contact.html" class="cta-button">Send Us a Message</a>
+                </div>
+            </section>
         </div>
-    </div>
-</section>
-
-<!-- Main Content -->
-<main class="main" id="main-content" role="main">
-<div class="container">
-
-<!-- Quick Visit Info -->
-<section aria-labelledby="quick-info">
-<h2 id="quick-info">Plan Your Visit</h2>
-<div class="card-grid">
-<div class="card">
-<div class="card-icon" aria-hidden="true">📍</div>
-<h3>Find Us</h3>
-<address style="font-style: normal;">
-<strong>123 Main Street</strong><br>
-Downtown District<br>
-City, State 12345
-</address>
-<p><a href="tel:+15551234567">(555) 123-4567</a></p>
-</div>
-
-<div class="card">
-<div class="card-icon" aria-hidden="true">🕒</div>
-<h3>Store Hours</h3>
-<p><strong>Monday - Friday:</strong> 10:00 AM - 9:00 PM</p>
-<p><strong>Saturday:</strong> 9:00 AM - 10:00 PM</p>
-<p><strong>Sunday:</strong> 12:00 PM - 7:00 PM</p>
-</div>
-
-<div class="card">
-<div class="card-icon" aria-hidden="true">🚗</div>
-<h3>Parking</h3>
-<p>Free street parking available. Validation provided for downtown parking garage. Accessible spaces available.</p>
-<p><strong>Parking garage:</strong> Corner of Main &amp; 1st Street</p>
-</div>
-</div>
-</section>
-
-<!-- Detailed Store Hours Table -->
-<section aria-labelledby="store-hours" style="margin-top: 3rem;">
-<h2 id="store-hours">Store Hours &amp; Availability</h2>
-<div class="card">
-<p>
-We're open seven days a week to serve you! Our extended evening hours make it convenient to visit after work,
-and we stay open late on Saturdays for your weekend shopping needs.
-</p>
-<div class="table-container" style="margin-top: 2rem;">
-<table class="data-table">
-<caption class="sr-only">Bella's Gift Boutique Operating Hours</caption>
-<thead>
-<tr>
-<th scope="col">Day</th>
-<th scope="col">Opening Time</th>
-<th scope="col">Closing Time</th>
-<th scope="col">Special Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th scope="row">Monday</th>
-<td>10:00 AM</td>
-<td>9:00 PM</td>
-<td>Personal shopping appointments available</td>
-</tr>
-<tr>
-<th scope="row">Tuesday</th>
-<td>10:00 AM</td>
-<td>9:00 PM</td>
-<td>Registry consultations available</td>
-</tr>
-<tr>
-<th scope="row">Wednesday</th>
-<td>10:00 AM</td>
-<td>9:00 PM</td>
-<td>New arrivals typically displayed</td>
-</tr>
-<tr>
-<th scope="row">Thursday</th>
-<td>10:00 AM</td>
-<td>9:00 PM</td>
-<td>Extended shopping hours all week</td>
-</tr>
-<tr>
-<th scope="row">Friday</th>
-<td>10:00 AM</td>
-<td>9:00 PM</td>
-<td>Wine and cheese first Fridays until 9:00 PM</td>
-</tr>
-<tr>
-<th scope="row">Saturday</th>
-<td>9:00 AM</td>
-<td>10:00 PM</td>
-<td>Extended weekend hours - personal shopping recommended</td>
-</tr>
-<tr>
-<th scope="row">Sunday</th>
-<td>12:00 PM</td>
-<td>7:00 PM</td>
-<td>Relaxed atmosphere, perfect for browsing</td>
-</tr>
-</tbody>
-</table>
-</div>
-
-<!-- Special Hours Notice -->
-<div style="margin-top: 2rem; padding: 1rem; background-color: #F5F1EB; border-radius: 0.5rem;">
-<h3>🎄 Holiday Hours</h3>
-<p>During peak holiday seasons (November-December), we extend our hours even further to better serve you. Follow us on social media or call ahead for holiday-specific hours. We're closed on major holidays: New Year's Day, Easter, Independence Day, Thanksgiving, and Christmas Day.</p>
-</div>
-</div>
-</section>
-
-<!-- Getting Here Section - SIMPLIFIED -->
-<section aria-labelledby="directions" style="margin-top: 3rem;">
-<h2 id="directions">Getting Here</h2>
-<div class="card">
-<h3>🚗 By Car</h3>
-<p>We're conveniently located in the heart of downtown. Use GPS navigation to find us at:</p>
-<p><strong>123 Main Street, Downtown District, State 12345</strong></p>
-<p>Plenty of parking options available including free street parking and a validated parking garage just one block away.</p>
-</div>
-</section>
-
-</div>
-</main>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>123 Main Street<br>Downtown District<br>City, State 12345</p>
+                    <p>Phone: <a href="tel:+15551234567">(555) 123-4567</a></p>
+                    <p>Email: <a href="mailto:hello@bellasgiftboutique.com">hello@bellasgiftboutique.com</a></p>
+                </div>
+               
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="location.html">Store Hours</a></li>
+                    </ul>
+                </div>
+               
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://www.giftretailer.com" target="_blank" rel="noopener">Gift Retail Magazine</a></li>
+                        <li><a href="https://www.museumstoreassociation.org" target="_blank" rel="noopener">Museum Store Association</a></li>
+                        <li><a href="https://www.retailgiftcard.org" target="_blank" rel="noopener">Retail Gift Card Association</a></li>
+                    </ul>
+                </div>
+            </div>
+           
+            <div style="text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #555;">
+                <p>&copy; 2025 Bella's Gift Boutique. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>
-
-
