@@ -3,305 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover our comprehensive gift services: Gift Registry, Professional Gift Wrapping, Domestic & International Shipping, and Personal Shopping Appointments.">
-    <meta name="keywords" content="gift registry, gift wrapping services, gift shipping, personal shopping, wedding registry">
-    <title>Our Services - Bella's Gift Boutique | Gift Registry, Wrapping & More</title>
-    
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
+    <meta name="description" content="Explore the services at Bella's Gift Boutique—professional gift wrapping, personal shopping, gift registry, and more. Luxury, convenience, and expert guidance for every gifting occasion.">
+    <meta name="keywords" content="Bella's Gift Boutique services, gift wrapping, personal shopping, registry, luxury gifts">
+    <meta name="author" content="Bella's Gift Boutique">
+    <meta name="robots" content="index, follow">
+    <title>Our Services - Bella's Gift Boutique | Gift Wrapping, Registry & Shopping</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/jpeg" href="favicon-navy.jpg">
+    <link rel="icon" type="image/jpeg" href="images/favicon-navy.jpg">
+    <link rel="apple-touch-icon" href="images/favicon-navy.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header Navigation -->
+    <!-- Header -->
     <header class="header" role="banner">
-        <nav class="nav container" role="navigation">
-            <a href="index.html" class="logo">
+        <nav class="nav container" role="navigation" aria-label="Main navigation">
+            <a href="index.html" class="logo" aria-label="Bella's Gift Boutique Home">
                 Bella's Gift Boutique
-                <img src="logo-desktop.jpg" alt="Bella's Gift Boutique Logo" class="logo-image">
+                <img src="images/logo-desktop.jpg" alt="Bella's Gift Boutique Logo" class="logo-image">
             </a>
-            
             <ul class="nav-list" role="menubar">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="services.html" class="nav-link active">Services</a></li>
-                <li><a href="about.html" class="nav-link">About Us</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-                <li><a href="location.html" class="nav-link">Visit Us</a></li>
+                <li role="none"><a href="index.html" class="nav-link" role="menuitem">Home</a></li>
+                <li role="none"><a href="services.html" class="nav-link active" role="menuitem">Services</a></li>
+                <li role="none"><a href="about.html" class="nav-link" role="menuitem">About Us</a></li>
+                <li role="none"><a href="contact.html" class="nav-link" role="menuitem">Contact</a></li>
+                <li role="none"><a href="location.html" class="nav-link" role="menuitem">Visit Us</a></li>
             </ul>
-            
-            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
                 <span class="hamburger-line"></span>
                 <span class="hamburger-line"></span>
                 <span class="hamburger-line"></span>
             </button>
-            
-            <div class="mobile-menu">
+            <div class="mobile-menu" role="menu">
                 <ul class="mobile-nav-list">
-                    <li><a href="index.html" class="mobile-nav-link">Home</a></li>
-                    <li><a href="services.html" class="mobile-nav-link active">Services</a></li>
-                    <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
-                    <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
-                    <li><a href="location.html" class="mobile-nav-link">Visit Us</a></li>
+                    <li><a href="index.html" class="mobile-nav-link" role="menuitem">Home</a></li>
+                    <li><a href="services.html" class="mobile-nav-link active" role="menuitem">Services</a></li>
+                    <li><a href="about.html" class="mobile-nav-link" role="menuitem">About Us</a></li>
+                    <li><a href="contact.html" class="mobile-nav-link" role="menuitem">Contact</a></li>
+                    <li><a href="location.html" class="mobile-nav-link" role="menuitem">Visit Us</a></li>
                 </ul>
             </div>
         </nav>
     </header>
- 
+
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Our Premium Services</h1>
-                <p class="hero-subtitle">Personalized experiences that make every gift extraordinary</p>
+                <h1>Our Services</h1>
+                <p class="hero-subtitle">Luxury gifting made effortless with our professional, personalized services</p>
             </div>
         </div>
     </section>
- 
+
     <!-- Main Content -->
     <main class="main" role="main">
         <div class="container">
-            <section>
-                <h2>Complete Gift Solutions</h2>
-                <p>At Bella's Gift Boutique, we understand that giving the perfect gift is an art. Our comprehensive services are designed to make your gift-giving experience seamless, personal, and memorable.</p>
+            <section aria-labelledby="what-we-offer">
+                <h2 id="what-we-offer">What We Offer</h2>
+                <p>At Bella's Gift Boutique, our services go far beyond what you’ll find at a typical gift shop. We’re devoted to providing a luxury gifting experience, from expert guidance to gorgeous presentation.</p>
             </section>
- 
-            <!-- Gift Registry Service -->
-            <section class="card" style="margin-top: 3rem;" id="gift-registry">
-                <h2>🎁 Gift Registry Service</h2>
-                <p>Create a personalized gift registry that reflects your unique style and needs. Perfect for weddings, baby showers, housewarmings, and special milestones.</p>
-               
-                <h3>Registry Features</h3>
-                <ul class="styled-list">
-                    <li>Online registry management with easy sharing</li>
-                    <li>In-store consultation with our gift specialists</li>
-                    <li>Curated gift suggestions based on your preferences</li>
-                    <li>Real-time purchase tracking and updates</li>
-                    <li>Thank you note coordination service</li>
-                    <li>Flexible pricing options for every budget</li>
-                    <li>Wedding and event planning assistance</li>
-                </ul>
-               
-                <div class="image-placeholder" role="img" aria-label="Gift registry consultation in progress">
-                    📸 Gift Registry Consultation Photo (Image will be added here)
-                </div>
-                
-                <p><strong>Popular Registry Types:</strong></p>
-                <ul class="styled-list">
-                    <li>Wedding Registries - Complete home setup essentials</li>
-                    <li>Baby Shower Registries - Everything new parents need</li>
-                    <li>Housewarming Registries - Make a new house feel like home</li>
-                    <li>Birthday & Anniversary Registries - Celebrate life's milestones</li>
-                </ul>
-            </section>
- 
-            <!-- Gift Wrapping Service -->
-            <section class="card" style="margin-top: 3rem;" id="gift-wrapping">
-                <h2>🎀 Professional Gift Wrapping</h2>
-                <p>Transform your gifts into works of art with our professional wrapping services. Using premium materials and expert techniques, we make every present as beautiful on the outside as what's inside.</p>
-               
-                <h3>Wrapping Options</h3>
+            
+            <div class="card-grid">
+                <section id="gift-wrapping" class="card" aria-labelledby="service-gift-wrapping">
+                    <h3 id="service-gift-wrapping">🎀 Professional Gift Wrapping</h3>
+                    <p>Make every present unforgettable with premium wrapping, ribbons, and personalized enhancements.</p>
+                    <ul class="styled-list">
+                        <li>Luxury wrapping (including gold & navy themes)</li>
+                        <li>Custom bows & embellishments</li>
+                        <li>Eco-friendly paper options</li>
+                        <li>Personal message cards</li>
+                    </ul>
+                    <a href="contact.html" class="cta-button">Request Wrapping Service</a>
+                </section>
+
+                <section id="personal-shopping" class="card" aria-labelledby="service-personal-shopping">
+                    <h3 id="service-personal-shopping">🛍️ Personal Shopping</h3>
+                    <p>Schedule a private appointment and let our team help you find extraordinary gifts for every occasion and recipient.</p>
+                    <ul class="styled-list">
+                        <li>One-on-one in-store or virtual sessions</li>
+                        <li>Expert, friendly advice</li>
+                        <li>Gift selection for every budget & vision</li>
+                        <li>Follow-up service for future gifting</li>
+                    </ul>
+                    <a href="contact.html" class="cta-button">Book Appointment</a>
+                </section>
+
+                <section id="gift-registry" class="card" aria-labelledby="service-gift-registry">
+                    <h3 id="service-gift-registry">📋 Gift Registry</h3>
+                    <p>Create, manage, or shop a custom registry for weddings, baby showers, and more. Guests enjoy seamless service too.</p>
+                    <ul class="styled-list">
+                        <li>Personal consultation & online registry setup</li>
+                        <li>Wish lists by event, couple, or family</li>
+                        <li>Gift tracking and thank-you support</li>
+                        <li>Easy sharing via email or link</li>
+                    </ul>
+                    <a href="contact.html" class="cta-button">Start Your Registry</a>
+                </section>
+            </div>
+            
+            <section id="special-services" aria-labelledby="special-services-title" style="margin-top: 3rem;">
+                <h2 id="special-services-title">Special & Seasonal Services</h2>
                 <div class="card-grid">
-                    <div>
-                        <h4>Classic Elegance</h4>
-                        <ul class="styled-list">
-                            <li>Luxury wrapping papers</li>
-                            <li>Satin ribbon accents</li>
-                            <li>Personalized gift tags</li>
-                            <li>Wax seal finishing touches</li>
-                        </ul>
+                    <div class="card">
+                        <h3>Corporate Gifts</h3>
+                        <p>Impress clients and recognize employees with tailored gifting solutions and branded packaging.</p>
                     </div>
-                    <div>
-                        <h4>Seasonal Themes</h4>
-                        <ul class="styled-list">
-                            <li>Holiday-specific designs</li>
-                            <li>Birthday celebration themes</li>
-                            <li>Wedding anniversary styles</li>
-                            <li>Baby shower motifs</li>
-                        </ul>
+                    <div class="card">
+                        <h3>Holiday & Theme Wrapping</h3>
+                        <p>Seasonal papers and unique embellishments for all occasions—Valentine's, Graduation, Christmas, Hanukkah, and more.</p>
                     </div>
-                    <div>
-                        <h4>Custom Creations</h4>
-                        <ul class="styled-list">
-                            <li>Branded corporate wrapping</li>
-                            <li>Color-coordinated themes</li>
-                            <li>Monogrammed ribbons</li>
-                            <li>Special occasion messaging</li>
-                        </ul>
-                    </div>
-                </div>
-               
-                <div class="image-placeholder" role="img" aria-label="Beautiful gift wrapping samples display">
-                    📸 Professional Gift Wrapping Samples (Image will be added here)
-                </div>
-            </section>
- 
-            <!-- Shipping Services -->
-            <section class="card" style="margin-top: 3rem;">
-                <h2>📦 Gift Shipping Services</h2>
-                <p>Send your perfect gifts anywhere in the world with our reliable shipping services. We handle all the details so your gifts arrive safely and on time.</p>
-               
-                <div class="table-container">
-                    <table class="data-table">
-                        <caption>Shipping Options and Delivery Times</caption>
-                        <thead>
-                            <tr>
-                                <th scope="col">Service Type</th>
-                                <th scope="col">Delivery Time</th>
-                                <th scope="col">Coverage Area</th>
-                                <th scope="col">Special Features</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Standard Domestic</th>
-                                <td>3-5 Business Days</td>
-                                <td>United States</td>
-                                <td>Free tracking, Insurance included</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Express Domestic</th>
-                                <td>1-2 Business Days</td>
-                                <td>United States</td>
-                                <td>Priority handling, Signature required</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">International Standard</th>
-                                <td>7-14 Business Days</td>
-                                <td>Worldwide</td>
-                                <td>Customs handling, Tracking included</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">International Express</th>
-                                <td>3-5 Business Days</td>
-                                <td>Major International Cities</td>
-                                <td>Expedited customs, Premium tracking</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Local Delivery</th>
-                                <td>Same Day</td>
-                                <td>Downtown District</td>
-                                <td>Hand delivery, Personal message</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-               
-                <div class="image-placeholder" role="img" aria-label="Professional packaging process">
-                    📸 Professional Packaging Process Photo (Image will be added here)
-                </div>
-                
-                <p><strong>Shipping Includes:</strong></p>
-                <ul class="styled-list">
-                    <li>Secure protective packaging</li>
-                    <li>Complimentary gift message cards</li>
-                    <li>Full insurance coverage</li>
-                    <li>Real-time tracking notifications</li>
-                    <li>Delivery confirmation with photos</li>
-                </ul>
-            </section>
- 
-            <!-- Personal Shopping -->
-            <section class="card" style="margin-top: 3rem;">
-                <h2>🛍️ Personal Shopping Appointments</h2>
-                <p>Experience the ultimate in personalized service with our one-on-one shopping consultations. Our expert stylists work with you to find the perfect gifts for any occasion.</p>
-               
-                <h3>Appointment Types</h3>
-                <ol style="padding-left: 2rem; margin: 1.5rem 0;">
-                    <li><strong>Express Consultation (30 minutes)</strong> - Perfect for single gift needs with quick expert recommendations</li>
-                    <li><strong>Standard Appointment (60 minutes)</strong> - Comprehensive consultation for multiple gifts with detailed planning</li>
-                    <li><strong>Premium Experience (90 minutes)</strong> - Full-service experience with refreshments and complete gift coordination</li>
-                    <li><strong>Group Shopping Session (2 hours)</strong> - Perfect for wedding parties, corporate gifts, or family occasions</li>
-                </ol>
-               
-                <div class="image-placeholder" role="img" aria-label="Personal shopping consultation session">
-                    📸 Personal Shopping Consultation Photo (Image will be added here)
-                </div>
-                
-                <h3>What's Included</h3>
-                <div class="card-grid" style="margin-top: 2rem;">
-                    <div>
-                        <h4>Consultation Process</h4>
-                        <ul class="styled-list">
-                            <li>Personal style assessment</li>
-                            <li>Budget planning assistance</li>
-                            <li>Occasion-specific recommendations</li>
-                            <li>Gift recipient profiling</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4>Service Benefits</h4>
-                        <ul class="styled-list">
-                            <li>Expert product knowledge</li>
-                            <li>Exclusive inventory access</li>
-                            <li>Coordination of multiple purchases</li>
-                            <li>Follow-up satisfaction check</li>
-                        </ul>
+                    <div class="card">
+                        <h3>Workshops & Events</h3>
+                        <p>Monthly gift wrapping workshops and community events hosted in our boutique. Join us for inspiration!</p>
                     </div>
                 </div>
             </section>
             
-            <!-- Pricing Overview -->
-            <section class="card" style="margin-top: 3rem;">
-                <h2>💎 Service Pricing</h2>
-                <p>We believe luxury service should be accessible. Our pricing is transparent and designed to provide exceptional value.</p>
-                
-                <div class="card-grid" style="margin-top: 2rem;">
-                    <div class="card">
-                        <h3>Gift Wrapping</h3>
-                        <ul class="styled-list">
-                            <li>Standard Wrapping: $8-15</li>
-                            <li>Premium Wrapping: $15-25</li>
-                            <li>Luxury Custom: $25-45</li>
-                            <li>Corporate Bulk: Contact for pricing</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="card">
-                        <h3>Personal Shopping</h3>
-                        <ul class="styled-list">
-                            <li>Express Session: $50</li>
-                            <li>Standard Appointment: $75</li>
-                            <li>Premium Experience: $125</li>
-                            <li>Group Sessions: $200+</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="card">
-                        <h3>Registry & Shipping</h3>
-                        <ul class="styled-list">
-                            <li>Gift Registry Setup: Complimentary</li>
-                            <li>Standard Shipping: $8-25</li>
-                            <li>Express Shipping: $25-65</li>
-                            <li>Local Delivery: $15-35</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
- 
-            <!-- Call to Action -->
             <section style="margin-top: 3rem; text-align: center; padding: 2rem; background-color: #f8f9fa; border-radius: 1rem;">
-                <h2>Ready to Experience Our Services?</h2>
-                <p>Contact us today to schedule your consultation or learn more about how we can make your gift-giving experience extraordinary.</p>
+                <h2>Questions About Our Services?</h2>
+                <p>Contact us for more information, to schedule an appointment, or to request a special service.</p>
                 <div style="margin-top: 1.5rem;">
-                    <a href="contact.html" class="cta-button" style="margin-right: 1rem;">Schedule Consultation</a>
-                    <a href="tel:+15551234567" class="cta-button">Call (555) 123-4567</a>
+                    <a href="contact.html" class="cta-button" aria-label="Contact us for questions or appointments">Contact Us</a>
+                    <a href="location.html" class="cta-button" aria-label="Visit our store">Visit Our Store</a>
                 </div>
             </section>
         </div>
     </main>
- 
+
     <!-- Footer -->
     <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Contact Us</h3>
-                    <p>123 Main Street<br>Downtown District<br>City, State 12345</p>
-                    <p>Phone: <a href="tel:+15551234567">(555) 123-4567</a></p>
-                    <p>Email: <a href="mailto:hello@bellasgiftboutique.com">hello@bellasgiftboutique.com</a></p>
+                    <address style="font-style: normal;">
+                        123 Main Street<br>
+                        Downtown District<br>
+                        City, State 12345
+                    </address>
+                    <p>Phone: <a href="tel:+15551234567" aria-label="Call us at (555) 123-4567">(555) 123-4567</a></p>
+                    <p>Email: <a href="mailto:hello@bellasgiftboutique.com" aria-label="Email us">hello@bellasgiftboutique.com</a></p>
                 </div>
-               
                 <div class="footer-section">
                     <h3>Quick Links</h3>
                     <ul class="footer-links">
@@ -311,23 +153,22 @@
                         <li><a href="location.html">Store Hours</a></li>
                     </ul>
                 </div>
-               
                 <div class="footer-section">
                     <h3>Resources</h3>
                     <ul class="footer-links">
-                        <li><a href="https://www.giftretailer.com" target="_blank" rel="noopener">Gift Retail Magazine</a></li>
-                        <li><a href="https://www.museumstoreassociation.org" target="_blank" rel="noopener">Museum Store Association</a></li>
-                        <li><a href="https://www.retailgiftcard.org" target="_blank" rel="noopener">Retail Gift Card Association</a></li>
+                        <li><a href="https://www.giftretailer.com" target="_blank" rel="noopener noreferrer" aria-label="Visit Gift Retailer Magazine (opens in new tab)">Gift Retail Magazine</a></li>
+                        <li><a href="https://www.museumstoreassociation.org" target="_blank" rel="noopener noreferrer" aria-label="Visit Museum Store Association (opens in new tab)">Museum Store Association</a></li>
+                        <li><a href="https://www.retailgiftcard.org" target="_blank" rel="noopener noreferrer" aria-label="Visit Retail Gift Card Association (opens in new tab)">Retail Gift Card Association</a></li>
                     </ul>
                 </div>
             </div>
-           
             <div style="text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #555;">
-                <p>&copy; 2025 Bella's Gift Boutique. All rights reserved.</p>
+                <p>&copy; 2025 Bella's Gift Boutique. All rights reserved. | 
+                <a href="privacy.html" style="color: #d4af37;">Privacy Policy</a> | 
+                <a href="accessibility.html" style="color: #d4af37;">Accessibility</a></p>
             </div>
         </div>
     </footer>
- 
     <script src="script.js"></script>
 </body>
 </html>
