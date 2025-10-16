@@ -3,47 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Bella's Gift Boutique - Schedule appointments, ask questions, or get in touch about our gift services.">
-    <meta name="keywords" content="contact bella's gift boutique, schedule appointment, gift consultation, customer service">
+    <meta name="description" content="Contact Bella's Gift Boutique - Schedule appointments, ask questions, or get in touch about our gift services. We're here to help you create the perfect gift experience.">
+    <meta name="keywords" content="contact bella's gift boutique, schedule appointment, gift consultation, customer service, boutique contact">
+    <meta name="author" content="Bella's Gift Boutique">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' fonts.googleapis.com; font-src fonts.gstatic.com;">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact Us - Bella's Gift Boutique">
+    <meta property="og:description" content="Get in touch with our gift experts for personalized service and consultations.">
+    <meta property="og:image" content="logo-desktop.jpg">
+    <meta property="og:url" content="https://indigozuma.github.io/bella-gift-boutique/contact.html">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://indigozuma.github.io/bella-gift-boutique/contact.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="favicon-navy.jpg">
+    <link rel="apple-touch-icon" href="favicon-navy.jpg">
+    
     <title>Contact Us - Bella's Gift Boutique | Get in Touch</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="logo-desktop.jpg" as="image">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Contact Bella's Gift Boutique",
+        "description": "Contact information and form for Bella's Gift Boutique",
+        "mainEntity": {
+            "@type": "LocalBusiness",
+            "name": "Bella's Gift Boutique",
+            "telephone": "(555) 123-4567",
+            "email": "hello@bellasgiftboutique.com"
+        }
+    }
+    </script>
+    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header -->
     <header class="header" role="banner">
-        <nav class="nav container" role="navigation">
-         <a href="index.html" class="logo">
-    Bella's Gift Boutique
-    <img src="bella200logo.svg" alt="Bella's Gift Boutique Logo" style="height: 40px; vertical-align: middle; margin-left: 8px;">
-</a>
-
-            
+        <nav class="nav container" role="navigation" aria-label="Main navigation">
+            <a href="index.html" class="logo" aria-label="Bella's Gift Boutique Home">
+                Bella's Gift Boutique
+                <img src="logo-desktop.jpg" alt="Bella's Gift Boutique Logo" class="logo-image">
+            </a>
+ 
+            <!-- Desktop Navigation -->
             <ul class="nav-list" role="menubar">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="services.html" class="nav-link">Services</a></li>
-                <li><a href="about.html" class="nav-link">About Us</a></li>
-                <li><a href="contact.html" class="nav-link active">Contact</a></li>
-                <li><a href="location.html" class="nav-link">Visit Us</a></li>
+                <li role="none"><a href="index.html" class="nav-link" role="menuitem">Home</a></li>
+                <li role="none"><a href="services.html" class="nav-link" role="menuitem">Services</a></li>
+                <li role="none"><a href="about.html" class="nav-link" role="menuitem">About Us</a></li>
+                <li role="none"><a href="contact.html" class="nav-link active" role="menuitem">Contact</a></li>
+                <li role="none"><a href="location.html" class="nav-link" role="menuitem">Visit Us</a></li>
             </ul>
-            
-            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+           
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
                 <span class="hamburger-line"></span>
                 <span class="hamburger-line"></span>
                 <span class="hamburger-line"></span>
             </button>
-            
-            <div class="mobile-menu">
+           
+            <!-- Mobile Navigation -->
+            <div class="mobile-menu" role="menu">
                 <ul class="mobile-nav-list">
-                    <li><a href="index.html" class="mobile-nav-link">Home</a></li>
-                    <li><a href="services.html" class="mobile-nav-link">Services</a></li>
-                    <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
-                    <li><a href="contact.html" class="mobile-nav-link active">Contact</a></li>
-                    <li><a href="location.html" class="mobile-nav-link">Visit Us</a></li>
+                    <li><a href="index.html" class="mobile-nav-link" role="menuitem">Home</a></li>
+                    <li><a href="services.html" class="mobile-nav-link" role="menuitem">Services</a></li>
+                    <li><a href="about.html" class="mobile-nav-link" role="menuitem">About Us</a></li>
+                    <li><a href="contact.html" class="mobile-nav-link active" role="menuitem">Contact</a></li>
+                    <li><a href="location.html" class="mobile-nav-link" role="menuitem">Visit Us</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-
+ 
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
@@ -53,42 +103,269 @@
             </div>
         </div>
     </section>
-
+ 
     <!-- Main Content -->
     <main class="main" role="main">
         <div class="container">
-            <section>
-                <h2>Get in Touch</h2>
+            <section aria-labelledby="get-in-touch">
+                <h2 id="get-in-touch">Get in Touch</h2>
                 <p>Whether you're planning a special occasion, need gift recommendations, or want to schedule a personal shopping appointment, we're here to help make your gift-giving experience extraordinary.</p>
             </section>
-
+ 
             <!-- Contact Form and Info Grid -->
             <div class="card-grid" style="margin-top: 3rem; grid-template-columns: 2fr 1fr;">
-                
+               
                 <!-- Contact Form -->
-                <section>
+                <section aria-labelledby="contact-form-title">
                     <div class="card">
-                        <h2>Send Us a Message</h2>
+                        <h2 id="contact-form-title">Send Us a Message</h2>
                         <p>Fill out the form below and we'll get back to you within 24 hours. For immediate assistance, please call us at <a href="tel:+15551234567">(555) 123-4567</a>.</p>
-                        
-                        <form id="contact-form" class="contact-form" novalidate style="margin-top: 2rem;">
+                       
+                        <form id="contact-form" class="contact-form" novalidate aria-describedby="form-instructions">
+                            <p id="form-instructions">Required fields are marked with an asterisk (*)</p>
+                            
                             <!-- Name Field -->
                             <div class="form-group">
-                                <label for="name" class="form-label">Full Name <span style="color: #EF4444;">*</span></label>
-                                <input type="text" id="name" name="name" class="form-input" required>
+                                <label for="name" class="form-label">Full Name <span aria-label="required" style="color: #b30000;">*</span></label>
+                                <input type="text" id="name" name="name" class="form-input" required 
+                                       aria-describedby="name-error" autocomplete="name"
+                                       placeholder="Enter your full name">
+                                <span id="name-error" class="error-message" role="alert" aria-live="polite"></span>
                             </div>
-                            
+                           
                             <!-- Email Field -->
                             <div class="form-group">
-                                <label for="email" class="form-label">Email Address <span style="color: #EF4444;">*</span></label>
-                                <input type="email" id="email" name="email" class="form-input" required>
+                                <label for="email" class="form-label">Email Address <span aria-label="required" style="color: #b30000;">*</span></label>
+                                <input type="email" id="email" name="email" class="form-input" required 
+                                       aria-describedby="email-error" autocomplete="email"
+                                       placeholder="Enter your email address">
+                                <span id="email-error" class="error-message" role="alert" aria-live="polite"></span>
                             </div>
-                            
+                           
                             <!-- Phone Field -->
                             <div class="form-group">
                                 <label for="phone" class="form-label">Phone Number</label>
-                                <input type="tel" id="phone" name="phone" class="form-input">
+                                <input type="tel" id="phone" name="phone" class="form-input" 
+                                       aria-describedby="phone-error" autocomplete="tel"
+                                       placeholder="(555) 123-4567">
+                                <span id="phone-error" class="error-message" role="alert" aria-live="polite"></span>
                             </div>
-                            
+                           
                             <!-- Subject Field -->
                             <div class="form-group">
+                                <label for="subject" class="form-label">Subject <span aria-label="required" style="color: #b30000;">*</span></label>
+                                <select id="subject" name="subject" class="form-select" required aria-describedby="subject-error">
+                                    <option value="">Please select a topic</option>
+                                    <option value="gift-consultation">Gift Consultation</option>
+                                    <option value="personal-shopping">Personal Shopping Appointment</option>
+                                    <option value="gift-registry">Gift Registry</option>
+                                    <option value="gift-wrapping">Gift Wrapping Services</option>
+                                    <option value="store-hours">Store Hours & Location</option>
+                                    <option value="general-inquiry">General Inquiry</option>
+                                    <option value="feedback">Feedback</option>
+                                </select>
+                                <span id="subject-error" class="error-message" role="alert" aria-live="polite"></span>
+                            </div>
+                           
+                            <!-- Message Field -->
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message <span aria-label="required" style="color: #b30000;">*</span></label>
+                                <textarea id="message" name="message" class="form-textarea" required 
+                                          aria-describedby="message-error message-help"
+                                          placeholder="Please describe how we can help you..."
+                                          rows="5"></textarea>
+                                <span id="message-help" class="sr-only">Please provide details about your inquiry so we can better assist you</span>
+                                <span id="message-error" class="error-message" role="alert" aria-live="polite"></span>
+                            </div>
+                           
+                            <!-- Preferred Contact Method -->
+                            <fieldset class="form-group">
+                                <legend class="form-label">Preferred Contact Method</legend>
+                                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                                    <label style="display: flex; align-items: center; font-weight: normal;">
+                                        <input type="radio" name="contact-method" value="email" checked style="margin-right: 0.5rem;">
+                                        Email
+                                    </label>
+                                    <label style="display: flex; align-items: center; font-weight: normal;">
+                                        <input type="radio" name="contact-method" value="phone" style="margin-right: 0.5rem;">
+                                        Phone
+                                    </label>
+                                    <label style="display: flex; align-items: center; font-weight: normal;">
+                                        <input type="radio" name="contact-method" value="either" style="margin-right: 0.5rem;">
+                                        Either
+                                    </label>
+                                </div>
+                            </fieldset>
+                           
+                            <!-- Privacy Consent -->
+                            <div class="form-group">
+                                <label style="display: flex; align-items: flex-start; font-weight: normal; gap: 0.5rem;">
+                                    <input type="checkbox" id="privacy-consent" name="privacy-consent" required 
+                                           aria-describedby="privacy-error" style="margin-top: 0.25rem;">
+                                    <span>I agree to the <a href="privacy.html" target="_blank" rel="noopener">Privacy Policy</a> and consent to being contacted by Bella's Gift Boutique. <span aria-label="required" style="color: #b30000;">*</span></span>
+                                </label>
+                                <span id="privacy-error" class="error-message" role="alert" aria-live="polite"></span>
+                            </div>
+                           
+                            <!-- Submit Button -->
+                            <button type="submit" class="form-button" aria-describedby="submit-help">
+                                Send Message
+                            </button>
+                            <span id="submit-help" class="sr-only">Your message will be sent securely and we'll respond within 24 hours</span>
+                            
+                            <!-- Success Message -->
+                            <div id="form-success" style="display: none; margin-top: 1rem; padding: 1rem; background-color: #d4edda; border: 1px solid #c3e6cb; border-radius: 0.375rem; color: #155724;" role="alert" aria-live="polite">
+                                Thank you for your message! We'll get back to you within 24 hours.
+                            </div>
+                        </form>
+                    </div>
+                </section>
+               
+                <!-- Contact Information -->
+                <aside>
+                    <div class="card">
+                        <h3>Contact Information</h3>
+                        
+                        <div style="margin-bottom: 1.5rem;">
+                            <h4 style="color: #0a1d40; margin-bottom: 0.5rem;">📍 Visit Our Store</h4>
+                            <address style="font-style: normal;">
+                                123 Main Street<br>
+                                Downtown District<br>
+                                City, State 12345
+                            </address>
+                        </div>
+                        
+                        <div style="margin-bottom: 1.5rem;">
+                            <h4 style="color: #0a1d40; margin-bottom: 0.5rem;">📞 Call Us</h4>
+                            <p><a href="tel:+15551234567" aria-label="Call us at (555) 123-4567">(555) 123-4567</a></p>
+                        </div>
+                        
+                        <div style="margin-bottom: 1.5rem;">
+                            <h4 style="color: #0a1d40; margin-bottom: 0.5rem;">✉️ Email Us</h4>
+                            <p><a href="mailto:hello@bellasgiftboutique.com" aria-label="Email us">hello@bellasgiftboutique.com</a></p>
+                        </div>
+                        
+                        <div style="margin-bottom: 1.5rem;">
+                            <h4 style="color: #0a1d40; margin-bottom: 0.5rem;">🕒 Store Hours</h4>
+                            <p>
+                                <strong>Mon-Fri:</strong> 10:00 AM - 9:00 PM<br>
+                                <strong>Saturday:</strong> 9:00 AM - 10:00 PM<br>
+                                <strong>Sunday:</strong> 12:00 PM - 7:00 PM
+                            </p>
+                        </div>
+                        
+                        <div>
+                            <h4 style="color: #0a1d40; margin-bottom: 0.5rem;">🎯 What to Expect</h4>
+                            <ul class="styled-list" style="font-size: 0.9rem;">
+                                <li>Response within 24 hours</li>
+                                <li>Personalized service</li>
+                                <li>Expert gift recommendations</li>
+                                <li>Flexible scheduling</li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+            
+            <!-- Additional Contact Methods -->
+            <section style="margin-top: 3rem;" aria-labelledby="other-ways">
+                <h2 id="other-ways">Other Ways to Connect</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-icon" aria-hidden="true">📅</div>
+                        <h3>Schedule an Appointment</h3>
+                        <p>Book a personal shopping consultation or gift registry appointment at your convenience.</p>
+                        <a href="services.html" class="cta-button" aria-label="Learn about appointment scheduling">Book Now</a>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon" aria-hidden="true">🚗</div>
+                        <h3>Visit Us In Person</h3>
+                        <p>Stop by our beautiful boutique to browse our collection and meet our team.</p>
+                        <a href="location.html" class="cta-button" aria-label="Get directions to our store">Get Directions</a>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon" aria-hidden="true">📋</div>
+                        <h3>Gift Registry</h3>
+                        <p>Create or manage your gift registry with our personalized service.</p>
+                        <a href="services.html#gift-registry" class="cta-button" aria-label="Learn about gift registry services">Registry Info</a>
+                    </div>
+                </div>
+            </section>
+ 
+            <!-- FAQ Section -->
+            <section style="margin-top: 3rem;" aria-labelledby="faq">
+                <h2 id="faq">Frequently Asked Questions</h2>
+                <div class="card">
+                    <div style="margin-bottom: 1.5rem;">
+                        <h4 style="color: #0a1d40;">How quickly will you respond to my inquiry?</h4>
+                        <p>We respond to all inquiries within 24 hours, typically much sooner during business hours.</p>
+                    </div>
+                    
+                    <div style="margin-bottom: 1.5rem;">
+                        <h4 style="color: #0a1d40;">Do you offer gift consultations over the phone?</h4>
+                        <p>Yes! We're happy to provide gift recommendations and consultations over the phone, though in-person visits allow us to show you our full selection.</p>
+                    </div>
+                    
+                    <div style="margin-bottom: 1.5rem;">
+                        <h4 style="color: #0a1d40;">Can I schedule appointments outside regular hours?</h4>
+                        <p>We occasionally accommodate special requests for appointments outside regular hours. Please contact us to discuss your needs.</p>
+                    </div>
+                    
+                    <div>
+                        <h4 style="color: #0a1d40;">Is there parking available?</h4>
+                        <p>Yes, we offer free street parking and validated parking at the downtown garage. See our <a href="location.html">Visit Us</a> page for details.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+ 
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <address style="font-style: normal;">
+                        123 Main Street<br>
+                        Downtown District<br>
+                        City, State 12345
+                    </address>
+                    <p>Phone: <a href="tel:+15551234567" aria-label="Call us at (555) 123-4567">(555) 123-4567</a></p>
+                    <p>Email: <a href="mailto:hello@bellasgiftboutique.com" aria-label="Email us">hello@bellasgiftboutique.com</a></p>
+                </div>
+               
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="location.html">Store Hours</a></li>
+                    </ul>
+                </div>
+               
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://www.giftretailer.com" target="_blank" rel="noopener noreferrer" aria-label="Visit Gift Retailer Magazine (opens in new tab)">Gift Retail Magazine</a></li>
+                        <li><a href="https://www.museumstoreassociation.org" target="_blank" rel="noopener noreferrer" aria-label="Visit Museum Store Association (opens in new tab)">Museum Store Association</a></li>
+                        <li><a href="https://www.retailgiftcard.org" target="_blank" rel="noopener noreferrer" aria-label="Visit Retail Gift Card Association (opens in new tab)">Retail Gift Card Association</a></li>
+                    </ul>
+                </div>
+            </div>
+           
+            <div style="text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #555;">
+                <p>&copy; 2025 Bella's Gift Boutique. All rights reserved. | 
+                <a href="privacy.html" style="color: #d4af37;">Privacy Policy</a> | 
+                <a href="accessibility.html" style="color: #d4af37;">Accessibility</a></p>
+            </div>
+        </div>
+    </footer>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
+
